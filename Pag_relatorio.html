@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Relatórios Gerenciais</title>
+  <link rel="stylesheet" href="Pag_relatorio.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <header>
+        <h1>Biotrade</h1>
+      </header>
+      <nav>
+        <ul>
+          <li class="active">Relatórios</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <div class="main-content">
+      <header class="top-bar">
+        <h2>Tela de Relatórios Gerenciais</h2>
+      </header>
+      <main>
+        <section class="report-section">
+          <h3>Impressão de Relatórios</h3>
+          <div class="options">
+            <label class="radio-option">
+              <input type="radio" name="report" checked>
+              <span>Fornecedores</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="report">
+              <span>Mercadorias</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="report">
+              <span>Relação de Pedidos de Compra</span>
+            </label>
+          </div>
+          <div class="buttons">
+            <button id="emitButton">Emitir Relatório</button>
+            <button id="closeButton">Fechar</button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="Pag_relatorio.js"></script>
+</body>
+</html>

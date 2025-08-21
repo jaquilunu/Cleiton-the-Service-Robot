@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Fornecedores</title>
+  <link rel="stylesheet" href="Pag_TelaForn.css">
+</head>
+<body>
+  <header>
+    <h1 class="title">Tela de Fornecedores</h1>
+    <button id="toggle-theme" class="theme-switcher">Alternar Tema</button>
+  </header>
+
+  <main>
+    <!-- Informações do Fornecedor -->
+    <section class="supplier-info">
+      <div class="input-group">
+        <label for="cpf-cnpj">CPF/CNPJ</label>
+        <input type="text" id="cpf-cnpj" value="666.777.111/0176" readonly>
+      </div>
+
+      <div class="input-group">
+        <label for="name">Nome</label>
+        <input type="text" id="name" value="Metralha e Metralha S.A." readonly>
+      </div>
+
+      <div class="input-group">
+        <label for="address">Endereço</label>
+        <input type="text" id="address" value="Av. Carandiru, 617 - S. Paulo - SP" readonly>
+      </div>
+
+      <div class="input-group">
+        <label for="phones">Telefones</label>
+        <input type="text" id="phones" value="11-167761; 11-671176" readonly>
+      </div>
+    </section>
+
+    <!-- Mercadorias Fornecidas -->
+    <section class="supplied-goods">
+      <h2>Mercadorias Fornecidas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody id="goods-list">
+          <tr>
+            <td>00344</td>
+            <td>Cerveja Rottenbeer</td>
+          </tr>
+          <tr>
+            <td>00266</td>
+            <td>Sabão Old Dog</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="actions">
+        <button id="add-good">Incluir Mercadoria</button>
+        <button id="remove-good">Excluir Mercadoria</button>
+      </div>
+    </section>
+
+    <!-- Botões de Ação -->
+    <section class="footer-buttons">
+      <button>Novo</button>
+      <button>Pesquisar</button>
+      <button>Salvar</button>
+      <button>Excluir</button>
+      <button>Fechar</button>
+    </section>
+  </main>
+
+  <script src="Pag_TelaForn.js"></script>
+</body>
+</html>

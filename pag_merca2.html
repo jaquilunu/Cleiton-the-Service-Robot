@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pag_merca.css">
+    <title>Biogás da Decomposição de Plástico - BioTrade</title>
+    <style>
+
+        @media (max-width: 768px) {
+            .header-bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .header-bar nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .product-page {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .product-details, .purchase-options {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .product-details {
+                padding: 20px;
+            }
+
+            .purchase-options {
+                padding: 20px;
+            }
+
+            .tabs {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .btn-buy, .btn-cart {
+                width: 100%;
+                padding: 15px;
+                font-size: 1em;
+            }
+
+            .product-price {
+                font-size: 2em;
+            }
+
+            .product-description {
+                font-size: 0.9em;
+            }
+                .btn-buy {
+        display: inline-block;
+        background-color: #FFF8E2;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.2em;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+    }
+    
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-bar">
+            <h1>BioTrade</h1>
+            <nav>
+                <ul>
+                    <li><a href="pag_princ.html">Início</a></li>
+                    <li><a href="pag_princ.html#Produto">Produto</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="product-page">
+            <div class="product-details">
+                <h2>Adubo da decomposição de Plástico</h2>
+                <img src="img/adubo.png" alt="Biogás da decomposição de plástico" class="product-image">
+                <div class="product-info">
+                    <h2>Biogás da Decomposição de Plástico</h2>
+                    <span class="availability">Exclusivo Site</span>
+                </div>
+                <div class="product-rating">
+                    <span>4.8 &#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    <span>(200 avaliações)</span>
+                </div>
+                
+            
+                
+
+            </div>
+            
+            <aside class="purchase-options">
+                <p class="product-price">R$ 1.646,22 /cada</p>
+                <p class="product-description">O plástico compostável se decompõe em água, dióxido de carbono e biomassa, e, diferentemente de um plástico biodegradável, produz adubo, pois se desintegra junto a materiais orgânicos em uma usina de compostagem ou em uma composteira doméstica.</p>
+
+                <h3>Opções de Pagamento</h3>
+                <ul>
+                    <li>Parcelamento até 10x sem juros</li>
+                    <li>Desconto de 10% no pagamento à vista</li>
+                </ul>
+                <br>
+                    <br>
+                <a href="pag_pagam2.php" class="btn-buy">Comprar Agora</a>
+                <div class="calculate-freight">
+                    <br>
+                    <br>
+                    <label for="cep">Calcule seu frete:</label>
+                    <br>
+                    <input type="text" id="cep" name="cep" placeholder="CEP">
+                    <button>Calcular</button>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="contact-box">
+                        <h2>Compre pelo Telefone</h2>
+                        <p>Telefone: 1234-5678 Capitais</p>
+                        <p>Telefone: 0800-123-4567 Demais Regiões</p>
+                    </div>
+
+                    <style>
+                        .contact-box {
+                            background-color: rgba(255, 248, 226, 1); 
+                            padding: 15px; 
+                            border-radius: 10px; 
+                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+                            margin-top: 20px; 
+                            color: #333; 
+                            font-size: 1em; 
+                            
+                        }
+                    
+                        
+                    </style>
+                    
+                    
+                    
+
+                </div>
+            </aside>
+        </div>
+
+        <section class="product-tabs">
+            <ul class="tabs">
+                <li class="active">Descrição do Produto</li>
+                <li>Características Técnicas</li>
+                <li>Avaliações</li>
+            </ul>
+            <div class="tab-content">
+                <article>
+                    <h3>Descrição Completa</h3>
+                    <p>O biogás é uma alternativa sustentável para a reciclagem de plásticos, gerando energia limpa a partir de resíduos que, de outra forma, seriam descartados de maneira inadequada. A aplicação deste produto é ideal para indústrias que buscam reduzir a pegada ambiental.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="product-reviews">
+            <h3>Avaliações dos Clientes</h3>
+            <div class="review">
+                <h4>Armando</h4>
+                <p>Vale o investimento. Produto de excelente qualidade e entrega rápida.</p>
+                <span>Nota: 5 estrelas</span>
+            </div>
+            <div class="review">
+                <h4>Anônimo</h4>
+                <p>Ótima qualidade e custo-benefício. Produto bastante resistente.</p>
+                <span>Nota: 4 estrelas</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BioTrade - Plataforma de Venda de Biorresíduos</p>
+        <div class="footer-contact">
+            <span>Telefone: 1234-5678 Capitais</span>
+            <span>Telefone: 0800-123-4567 Demais regiões</span>
+        </div>
+    </footer>
+    
+    <script src="pag_merca.js"></script>
+</body>
+</html>
